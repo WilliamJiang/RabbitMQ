@@ -1,6 +1,6 @@
 # RabbitMQ
 
-rabbitmq, node and websocket
+A small RabbitMQ app in Node+Express environment, with rabbitmq, node and websocket
 
 ## use Webstorm Node.js Express App
 
