@@ -10,10 +10,7 @@ client.connect(function(sessionId) {
 	console.log(sessionId);
 
     client.subscribe(destination, function(body, headers) {
-      console.log('This is the body of a message on the subscribed queue:', body);
+      console.log(body);
     });
 
-    client.publish(destination, 'Oh Hello from William Jiang.');
-
-    client.removeQueue('someQueueName');
 });
