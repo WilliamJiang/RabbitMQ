@@ -22,13 +22,12 @@ amqp.connect('amqp://localhost', function(err, conn) {
 
     // ch.purgeQueue(q);
     try {
+        ch.deleteQueue(q);
     	ch.close();
-		//ch.deleteQueue(q);
 		//console.log(q);
     }
     catch (alreadyClosed) {
-    	console.log(alreadyClosed.stackAtStateChange);
-
+        console.log(alreadyClosed.stackAtStateChange);
     } 
    
   });
